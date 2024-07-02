@@ -1,0 +1,17 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Result</h1>
+    <p>You chose: <strong>{{ player_choice }}</strong></p>
+    <p>Computer chose: <strong>{{ computer_choice }}</strong></p>
+    <p><strong>{{ result }}</strong></p>
+    <p><a href="/">Play another round</a></p>
+</body>
+</html>
